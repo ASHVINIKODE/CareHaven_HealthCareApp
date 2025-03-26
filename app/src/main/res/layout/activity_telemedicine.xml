@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center"
+    android:background="#F5F5F5">
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Telemedicine Consultation"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:paddingBottom="20dp"
+        android:gravity="center"/>
+
+    <!-- Video Call Button -->
+    <Button
+        android:id="@+id/btnStartVideoCall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Video Call"
+        android:backgroundTint="#4CAF50"
+        android:textColor="@android:color/white"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:layout_marginBottom="15dp"/>
+
+    <!-- Audio Call Button -->
+    <Button
+        android:id="@+id/btnStartAudioCall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Audio Call"
+        android:backgroundTint="#FFC107"
+        android:textColor="@android:color/white"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:layout_marginBottom="15dp"/>
+
+    <!-- Chat Button -->
+    <Button
+        android:id="@+id/btnChat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Chat"
+        android:backgroundTint="#2196F3"
+        android:textColor="@android:color/white"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:layout_marginBottom="15dp"/>
+</LinearLayout>

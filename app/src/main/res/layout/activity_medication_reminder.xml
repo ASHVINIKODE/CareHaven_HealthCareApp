@@ -1,0 +1,196 @@
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:background="@color/white"-->
+<!--    tools:context=".medicationReminder">-->
+
+<!--    <ScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:fillViewport="true"-->
+<!--        android:padding="20dp">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical"-->
+<!--            android:id="@+id/medicationReminderLinearLayout">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Medication Reminders"-->
+<!--                android:textColor="@android:color/black"-->
+<!--                android:textSize="24sp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:paddingBottom="16dp"-->
+<!--                android:gravity="center"/>-->
+
+<!--            <Button-->
+<!--                android:id="@+id/btnCurrentMedications"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Current Medications"-->
+<!--                android:backgroundTint="@android:color/black"-->
+<!--                android:textColor="@android:color/white"-->
+<!--                android:padding="16dp"-->
+<!--                android:layout_marginTop="8dp" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/btnMissedMedications"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Missed Medications"-->
+<!--                android:backgroundTint="@android:color/black"-->
+<!--                android:textColor="@android:color/white"-->
+<!--                android:padding="16dp"-->
+<!--                android:layout_marginTop="8dp" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/btnAddMedication"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Add New Medication"-->
+<!--                android:backgroundTint="@android:color/black"-->
+<!--                android:textColor="@android:color/white"-->
+<!--                android:padding="16dp"-->
+<!--                android:layout_marginTop="8dp" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/btnSetReminders"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Set/Edit Reminders"-->
+<!--                android:backgroundTint="@android:color/black"-->
+<!--                android:textColor="@android:color/white"-->
+<!--                android:padding="16dp"-->
+<!--                android:layout_marginTop="8dp" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/btnMedicationHistory"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Medication History"-->
+<!--                android:backgroundTint="@android:color/black"-->
+<!--                android:textColor="@android:color/white"-->
+<!--                android:padding="16dp"-->
+<!--                android:layout_marginTop="8dp" />-->
+<!--            <Button-->
+<!--                android:id="@+id/buttonNext"-->
+<!--                android:layout_width="120dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="end"-->
+<!--                android:layout_marginBottom="30dp"-->
+<!--                android:backgroundTint="#070707"-->
+<!--                android:padding="4dp"-->
+<!--                android:text="Back"-->
+<!--                android:textColor="@android:color/white"-->
+<!--                android:textSize="18sp" />-->
+
+<!--        </LinearLayout>-->
+
+<!--    </ScrollView>-->
+
+<!--</RelativeLayout>-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".medicationReminder">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/medicationReminderLinearLayout">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Medication Reminders"
+                android:textColor="@android:color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:paddingBottom="16dp"
+                android:gravity="center"/>
+
+            <Button
+                android:id="@+id/btnCurrentMedications"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Current Medications"
+                android:backgroundTint="@android:color/black"
+                android:textColor="@android:color/white"
+                android:padding="16dp"
+                android:layout_marginTop="8dp"
+                android:onClick="openCurrentMedications"/>
+
+            <Button
+                android:id="@+id/btnMissedMedications"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Missed Medications"
+                android:backgroundTint="@android:color/black"
+                android:textColor="@android:color/white"
+                android:padding="16dp"
+                android:layout_marginTop="8dp"
+                android:onClick="openMissedMedications"/>
+
+            <Button
+                android:id="@+id/btnAddMedication"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add New Medication"
+                android:backgroundTint="@android:color/black"
+                android:textColor="@android:color/white"
+                android:padding="16dp"
+                android:layout_marginTop="8dp"
+                android:onClick="openAddNewMedications"/>
+
+            <Button
+                android:id="@+id/btnSetReminders"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Set/Edit Reminders"
+                android:backgroundTint="@android:color/black"
+                android:textColor="@android:color/white"
+                android:padding="16dp"
+                android:layout_marginTop="8dp"
+                android:onClick="openSetEditReminders"/>
+
+            <Button
+                android:id="@+id/btnMedicationHistory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Medication History"
+                android:backgroundTint="@android:color/black"
+                android:textColor="@android:color/white"
+                android:padding="16dp"
+                android:layout_marginTop="8dp"
+                android:onClick="openMedicationHistory"/>
+
+<!--            <Button-->
+<!--                android:id="@+id/buttonNext"-->
+<!--                android:layout_width="120dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="end"-->
+<!--                android:layout_marginBottom="30dp"-->
+<!--                android:backgroundTint="#070707"-->
+<!--                android:padding="4dp"-->
+<!--                android:text="Back"-->
+<!--                android:textColor="@android:color/white"-->
+<!--                android:textSize="18sp" />-->
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logo1"
+        android:label="CareHaven"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+
+        android:theme="@style/Theme.MyApp2">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RegistrationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".DashboardActivity"
+            android:exported="true" />
+        <activity
+            android:name=".DoctorDashboard"
+            android:exported="true" />
+        <activity
+            android:name=".ScheduleManagementActivity"
+            android:exported="true" />
+        <activity
+            android:name=".TelemedicineActivity"
+            android:exported="true" />
+        <activity
+            android:name=".EPrescriptionActivity"
+            android:exported="true" />
+        <activity
+            android:name=".NewActivity"
+            android:exported="true" />
+        <activity
+            android:name=".UpcomingConsultations"
+            android:exported="true" />
+        <activity
+            android:name=".PastConsultation"
+            android:exported="true" />
+        <activity
+            android:name=".ScheduleConsultation"
+            android:exported="true" />
+        <activity
+            android:name=".JoinConsultation"
+            android:exported="true" />
+        <activity
+            android:name=".CancelAppoints"
+            android:exported="true" />
+        <activity
+            android:name=".RescheduleAppoints"
+            android:exported="true" />
+        <activity
+            android:name=".BookNewAppoints"
+            android:exported="true" />
+        <activity
+            android:name=".UpcomingAppoints"
+            android:exported="true" />
+        <activity
+            android:name=".PastAppoints"
+            android:exported="true" />
+        <activity
+            android:name=".MedicationHistory"
+            android:exported="true" />
+        <activity
+            android:name=".SetEditReminders"
+            android:exported="true" />
+        <activity
+            android:name=".AddNewMedication"
+            android:exported="true" />
+        <activity
+            android:name=".MissedMedication"
+            android:exported="true" />
+        <activity
+            android:name=".CurrentMedications"
+            android:exported="true" />
+        <activity
+            android:name=".medicationReminder"
+            android:exported="true" />
+        <activity
+            android:name=".medicine"
+            android:exported="true" />
+        <activity
+            android:name=".DoctorInsight"
+            android:exported="true" />
+        <activity
+            android:name=".OverallHealthSummary"
+            android:exported="true" />
+        <activity
+            android:name=".BloodSugarLevel"
+            android:exported="true" />
+        <activity
+            android:name=".WeightBMI"
+            android:exported="true" />
+        <activity
+            android:name=".heartBP"
+            android:exported="true" />
+        <activity
+            android:name=".HealthAnalysis"
+            android:exported="true" />
+        <activity
+            android:name=".EmergencyContact"
+            android:exported="true" />
+        <activity
+            android:name=".CallEmergencies"
+            android:exported="true" />
+
+        <activity
+            android:name=".AddEmegencies"
+            android:exported="true" />
+        <activity
+            android:name=".SavedEmegencies"
+            android:exported="true" />
+        <activity
+            android:name=".AmbulanceService"
+            android:exported="true" />
+        <activity
+            android:name=".HospitalsClinics"
+            android:exported="true" />
+        <activity
+            android:name=".UploadRecords"
+            android:exported="true" />
+        <activity
+            android:name=".ViewAllRecord"
+            android:exported="true" />
+        <activity
+            android:name=".DiagnosisHistory"
+            android:exported="true" />
+        <activity
+            android:name=".LabReport"
+            android:exported="true" />
+        <activity
+            android:name=".prescription"
+            android:exported="true" />
+        <activity
+            android:name=".MedicalRecord"
+            android:exported="true" />
+        <activity
+            android:name=".ViewDoctors"
+            android:exported="true" />
+        <activity
+            android:name=".Appointment"
+            android:exported="true" />
+        <activity
+            android:name=".Scroll"
+            android:exported="true" />
+    </application>
+
+</manifest>

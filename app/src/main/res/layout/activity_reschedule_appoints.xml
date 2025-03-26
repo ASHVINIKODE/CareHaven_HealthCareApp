@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reschedule Appointment"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:id="@+id/existing_appointment_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Existing Appointment ID"
+        android:padding="10dp"
+        android:background="@android:drawable/edit_text"/>
+
+    <EditText
+        android:id="@+id/new_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter New Date"
+        android:padding="10dp"
+        android:background="@android:drawable/edit_text"/>
+
+    <EditText
+        android:id="@+id/new_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter New Time"
+        android:padding="10dp"
+        android:background="@android:drawable/edit_text"/>
+
+    <Button
+        android:id="@+id/btn_reschedule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reschedule"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"/>
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_back"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Back"-->
+<!--        android:backgroundTint="@color/black"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:padding="10dp"-->
+<!--        android:layout_marginTop="10dp"/>-->
+</LinearLayout>
